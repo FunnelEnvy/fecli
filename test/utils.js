@@ -5,7 +5,7 @@ var assert = require('chai').assert;
 var fs = require('fs');
 var Promise = require('bluebird');
 
-var optcli = __dirname + "/../bin/optcli.js";
+var fecli = __dirname + "/../bin/fecli.js";
 var utils = {};
 var initProject = require('../lib/commands/init-project.js');
 var createExperiment = require('../lib/commands/create-experiment.js');
@@ -63,12 +63,12 @@ utils.variation = function(experimentDirectory, variationFolder, variationName) 
 }
 
 /**
- * Creates .optcli directory and token file
+ * Creates .fecli directory and token file
  */
 utils.createOptimizelyToken = function(projectDir) {
-  //create the .optcli and token directory 
-  fs.mkdirSync(projectDir + '/.optcli/');
-  fs.writeFileSync(projectDir + '/.optcli/token', '12345');
+  //create the .fecli and token directory 
+  fs.mkdirSync(projectDir + '/.fecli/');
+  fs.writeFileSync(projectDir + '/.fecli/token', '12345');
 }
 
 /**

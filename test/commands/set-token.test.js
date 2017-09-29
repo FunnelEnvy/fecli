@@ -23,7 +23,7 @@ describe('Set Token Command', function(){
   });
   it('Should set the token in the current directory', function(done){
     setToken(tokenString , {});
-    fs.readFile(directory.project + '/.optcli/token', function(err, token){
+    fs.readFile(directory.project + '/.fecli/token', function(err, token){
       expect(err).to.be.null;
       expect(String(token)).to.equal(tokenString);
       done();

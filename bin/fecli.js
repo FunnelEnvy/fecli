@@ -2,7 +2,7 @@
 
 var program = require("commander");
 var path = require("path");
-var optcliPackage = require(path.join(__dirname, "../", "package.json"));
+var fecliPackage = require(path.join(__dirname, "../", "package.json"));
 var logger = require("../lib/logger.js");
 
 /* commands */
@@ -22,9 +22,9 @@ function increaseVerbosity(v) {
 }
 
 program
-  .version(optcliPackage.version)
-  .usage(" - " + optcliPackage.description)
-  .description(optcliPackage.description)
+  .version(fecliPackage.version)
+  .usage(" - " + fecliPackage.description)
+  .description(fecliPackage.description)
   .option("-v --verbose", "show debug output", increaseVerbosity)
 
 program

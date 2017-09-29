@@ -1,23 +1,23 @@
 {
-  "name": "optimizely-cli",
-  "version": "0.17.0",
-  "description": "A command line application to create Optimizely experiments and publish via the API",
+  "name": "fecli",
+  "version": "0.1.0",
+  "description": "A fork of optimizely-cli; a command line application to create Optimizely and Adobe Test & Target experiments and publish via the API",
   "main": "index.js",
   "bin": {
-    "optcli": "bin/optcli.js"
+    "fecli": "bin/fecli.js"
   },
   "scripts": {
     "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec"
   },
-  "repository": "git@github.com:FunnelEnvy/optimizely-cli.git",
   "keywords": [
     "optimizely",
     "cli"
   ],
-  "author": "Arun Sivashankaran",
+  "author": "Arun Sivashankaran, Brian Hall",
   "contributors": [
     "Arun Sivashankaran",
-    "John Henry"
+    "John Henry",
+    "Brian Hall"
   ],
   "license": "Apache 2.0",
   "dependencies": {

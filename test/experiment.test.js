@@ -221,38 +221,38 @@ describe('Experiment Object', function (){
     });
   });
   
-  describe('#getOptcliURL()', function(){
-    it('Should put optcli=activate at the end with an &', function(){
+  describe('#getFecliURL()', function(){
+    it('Should put fecli=activate at the end with an &', function(){
       var newURL = edit_url + '?myparam=true';
       var experiment = new Experiment({
         description: description,
         edit_url: newURL
       }, experimentPath+'1');
-      expect(experiment.getOptcliURL()).to.equal(newURL+'&optcli=activate');
+      expect(experiment.getFecliURL()).to.equal(newURL+'&fecli=activate');
     });
-    it('Should put optcli=activate at the end with a ?', function(){
+    it('Should put fecli=activate at the end with a ?', function(){
       var newURL = edit_url;
       var experiment = new Experiment({
         description: description,
         edit_url: newURL
       }, experimentPath+'1');
-      expect(experiment.getOptcliURL()).to.equal(newURL+'?optcli=activate');
+      expect(experiment.getFecliURL()).to.equal(newURL+'?fecli=activate');
     });
-    it('Should put optcli=activate before the hash with an &', function(){
+    it('Should put fecli=activate before the hash with an &', function(){
       var newURL = edit_url + '?mygetparam=true#myhashparam=true';
       var experiment = new Experiment({
         description: description,
         edit_url: newURL
       }, experimentPath+'1');
-      expect(experiment.getOptcliURL()).to.equal(newURL.replace('#','&optcli=activate#'));
+      expect(experiment.getFecliURL()).to.equal(newURL.replace('#','&fecli=activate#'));
     });
-    it('Should put optcli=activate before the hash with a ?', function(){
+    it('Should put fecli=activate before the hash with a ?', function(){
       var newURL = edit_url + '#myhashparam=true';
       var experiment = new Experiment({
         description: description,
         edit_url: newURL
       }, experimentPath+'1');
-      expect(experiment.getOptcliURL()).to.equal(newURL.replace('#','?optcli=activate#'));
+      expect(experiment.getFecliURL()).to.equal(newURL.replace('#','?fecli=activate#'));
     });
   });
 });
