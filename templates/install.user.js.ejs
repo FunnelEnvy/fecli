@@ -9,11 +9,19 @@
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js
 // ==/UserScript==
 
+// Add experiment.css
+var stylesheet = document.createElement('link');
+stylesheet.rel = 'stylesheet';
+stylesheet.href = '//localhost:<%- _port %>/experiment.css';
+document.head.appendChild(stylesheet);
+
+// Add variation.js
 var scriptElement = document.createElement('script');
 scriptElement.type = 'text/javascript';
 scriptElement.src =  '//localhost:<%- _port %>/variation.js';
 document.head.appendChild(scriptElement);
 
+// Add variation.css
 var stylesheet = document.createElement('link');
 stylesheet.rel = 'stylesheet';
 stylesheet.href = '//localhost:<%- _port %>/variation.css';
