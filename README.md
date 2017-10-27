@@ -31,6 +31,10 @@ fecli init [options] [project_id]
 ```
 Initializes a new Optimizely project locally (use `-r` for remote).
 
+[Project ID screenshot](http://d.pr/i/ZBnxk)
+[Generate an API Token screenshot](http://d.pr/i/cEbjam)
+[Generated API Token screenshot](http://d.pr/i/D7VmsQ)
+
 ```
 fecli experiment <folder> <description> <url>
 ```
