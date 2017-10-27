@@ -52,6 +52,11 @@ program
   .action(loadCommand("host"));
 
 program
+  .command("compile <path>")
+  .description("Write a 'compiled.html' file to a variation folder, for export to Adobe Test & Target")
+  .action(loadCommand("compile"));
+
+program
   .command("pull <experiment_id>")
   .description("Pull an (Optimizely X) experiment and create a folder")
   .action(loadCommand("pull"));
