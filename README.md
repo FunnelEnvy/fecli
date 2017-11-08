@@ -1,6 +1,5 @@
 # FunnelEnvy Command Line Interface
 
-
 fecli is a command line tool that lets developers build experiments faster by using the sofware tools you already love and publish to Optimizely when ready. We build a lot of tests at [FunnelEnvy](http://www.funnelenvy.com) and found that (being stubborn engineers) we were more comfortable using our source editors and Git to develop locally - and this had a *significant* positive impact on our test velocity.
 
 fecli includes a command line executable that also integrates with either the[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) (Google Chrome) or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) (Firefox) extensions for local development / preview and the Optimizely API for publishing tests.
@@ -53,15 +52,31 @@ Host a variation locally. Point your browser at http(s)://localhost:8080 (defaul
 ```
 fecli push-experiment <path>
 ```
-Push a local experiment to Optimizely.
+Push a local experiment to Optimizely Classic
 
 ```
 fecli push-variation <path>
 ```
-Push a local variation to Optimizely
+Push a local variation to Optimizely Classic
 
-## Known Issues
-* Tests - We have some. We're adding more.
+---
+
+*New features for Optimizely X*
+
+```
+fecli pull <experiment_id>
+```
+Pull an experiment from Optimizely X (do this before you push)
+
+```
+fecli push <path>
+```
+Push an experiment to Optimizely X
+
+```
+fecli compile <path>
+```
+Generate a `compiled.html` file for use with Adobe Test & Target
 
 
 ## Release History
