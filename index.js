@@ -1,1 +1,1 @@
-require("./lib/optin.js");
+require("./bin/fecli.js");
