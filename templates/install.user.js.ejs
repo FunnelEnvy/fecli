@@ -1,28 +1,19 @@
 // ==UserScript==
 // @name         Fecli Injection Script
 // @author       FunnelEnvy
-// @homepage     http://www.funnelenvy.com/optimizely-cli
+// @homepage     http://www.funnelenvy.com/
 // @source       https://github.com/funnelenvy/optimizely-cli
 // @namespace    fecli
-// @description  Inject local experiment JS / CSS into a Chrome page for development 
+// @description  Inject local JS / CSS into a Chrome page for development
 // @include      /fecli=activate/
-// @require      http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js
+// @run-at       document-start
 // ==/UserScript==
 
-// Add experiment.css
-var stylesheet = document.createElement('link');
-stylesheet.rel = 'stylesheet';
-stylesheet.href = '//localhost:<%- _port %>/experiment.css';
-document.head.appendChild(stylesheet);
-
-// Add variation.js
-var scriptElement = document.createElement('script');
-scriptElement.type = 'text/javascript';
-scriptElement.src =  '//localhost:<%- _port %>/variation.js';
-document.head.appendChild(scriptElement);
-
-// Add variation.css
-var stylesheet = document.createElement('link');
-stylesheet.rel = 'stylesheet';
-stylesheet.href = '//localhost:<%- _port %>/variation.css';
-document.head.appendChild(stylesheet);
+// Add inject.js
+(function addScript () {
+  if (!document.head) return setTimeout(addScript, 50);
+  var scriptElement = document.createElement('script');
+  scriptElement.type = 'text/javascript';
+  scriptElement.src =  '//localhost:<%- _port %>/inject.js';
+  document.head.appendChild(scriptElement);
+})();

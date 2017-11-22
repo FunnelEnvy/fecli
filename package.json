@@ -6,9 +6,6 @@
   "bin": {
     "fecli": "bin/fecli.js"
   },
-  "scripts": {
-    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec"
-  },
   "keywords": [
     "optimizely",
     "cli"
@@ -19,33 +16,12 @@
   ],
   "license": "Apache 2.0",
   "dependencies": {
-    "bluebird": "^2.3.2",
-    "cli-table": "^0.3.1",
     "commander": "^2.5.0",
     "ejs": "^1.0.0",
     "express": "^4.10.4",
-    "glob": "^4.2.2",
-    "lodash": "^2.4.1",
-    "open": "0.0.5",
-    "optimizely-node-client": "^0.1.0",
-    "promptly": "^0.2.0",
-    "q": "^1.1.2",
-    "request": "^2.81.0"
+    "open": "0.0.5"
   },
   "engines": {
     "node": "^0.10.32"
-  },
-  "devDependencies": {
-    "chai": "^1.10.0",
-    "codeclimate-test-reporter": "^0.1.0",
-    "coveralls": "^2.11.2",
-    "intercept-stdout": "^0.1.1",
-    "istanbul": "^0.3.17",
-    "mocha": "^2.1.0",
-    "mocha-lcov-reporter": "0.0.2",
-    "path": "^0.12.7",
-    "proxyquire": "^1.3.1",
-    "quick-temp": "^0.1.2",
-    "sinon": "^1.12.2"
   }
 }
