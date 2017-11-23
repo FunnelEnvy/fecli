@@ -14,6 +14,6 @@
   if (!document.head) return setTimeout(addScript, 50);
   var scriptElement = document.createElement('script');
   scriptElement.type = 'text/javascript';
-  scriptElement.src =  '//localhost:<%- _port %>/inject.js';
+  scriptElement.src =  'https://localhost:8080/inject.js';
   document.head.appendChild(scriptElement);
 })();

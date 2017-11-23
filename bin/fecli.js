@@ -28,10 +28,9 @@ program
   .option("-v --verbose", "show debug output", increaseVerbosity)
 
 program
-  .command("host <path> [port]")
-  .option("-s --ssl", "SSL")
+  .command('host <path>')
   .option("-o --open", "Open the localhost index page")
-  .description("Host variation locally")
+  .description("Host experience locally")
   .action(loadCommand("host"));
 
 //Show help if no arguments are passed
