@@ -1,1 +1,1 @@
-require("./bin/fecli.js");
+require('./bin/fecli.js')

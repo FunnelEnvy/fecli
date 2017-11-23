@@ -6,6 +6,9 @@
   "bin": {
     "fecli": "bin/fecli.js"
   },
+  "scripts": {
+    "test": "standard"
+  },
   "keywords": [
     "optimizely",
     "cli"
@@ -23,5 +26,8 @@
   },
   "engines": {
     "node": "^0.10.32"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
   }
 }
