@@ -1,5 +1,7 @@
 {
   "files": [
-    "./sample.js"
+    "./sample1.css",
+    "./sample1.js",
+    "./sample2.js"
   ]
 }
