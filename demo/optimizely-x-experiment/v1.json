@@ -1,4 +1,5 @@
 {
+  "inject": "window.optimizely && window.optimizely.get",
   "files": [
     "./shared.css",
     "./shared.js",
