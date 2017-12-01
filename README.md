@@ -31,7 +31,7 @@ fecli host <path/to/some.json>
 
 At the minimum, your file must define an array of `"files"` to host. For a minimal example, see `demo/sample/minimal.json`. Hosting this file with `fecli` will inject the contents of a single JavaScript file into the browser.
 
-You can define as many files as you want, with ".js", ".css" or ".html" extensions. They'll be added to the page in the order listed.
+You can define as many files as you want, with ".js" or ".css" extensions. They'll be added to the page in the order listed.
 
 Optionally, you can define an `"inject"` condition to ensure that your code only runs after a certain statement evaulates to `true`. TODO example
 
