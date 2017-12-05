@@ -3,7 +3,6 @@
 var program = require('commander')
 var path = require('path')
 var fecliPackage = require(path.join(__dirname, '../', 'package.json'))
-var logger = require('../lib/logger.js')
 
 /* commands */
 var loadCommand = function (cmd) {
@@ -14,17 +13,9 @@ var loadCommand = function (cmd) {
   }
 }
 
-// default log level
-logger.debugLevel = 'info'
-
-function increaseVerbosity (v) {
-  logger.debugLevel = 'debug'
-}
-
 program
   .version(fecliPackage.version)
   .description(fecliPackage.description)
-  .option('-v --verbose', 'show debug output', increaseVerbosity)
 
 program
   .command('host <path>')
