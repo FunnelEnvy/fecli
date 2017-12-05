@@ -23,7 +23,6 @@ function increaseVerbosity (v) {
 
 program
   .version(fecliPackage.version)
-  .usage(' - ' + fecliPackage.description)
   .description(fecliPackage.description)
   .option('-v --verbose', 'show debug output', increaseVerbosity)
 

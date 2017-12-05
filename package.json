@@ -1,7 +1,7 @@
 {
   "name": "fecli",
   "version": "0.2.0",
-  "description": "A fork of optimizely-cli; a command line application to create Optimizely and Adobe Test & Target experiments and publish via the API",
+  "description": "A fork of optimizely-cli; a command line tool for local hosting of experiences for Optimizely Classic and X, Adobe Test & Target, and Google Optimize",
   "main": "index.js",
   "bin": {
     "fecli": "bin/fecli.js"
