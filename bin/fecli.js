@@ -28,7 +28,6 @@ program
 
 program
   .command('host <path>')
-  .option('-o --open', 'Open the localhost index page')
   .description('Host experience locally')
   .action(loadCommand('host'))
 
