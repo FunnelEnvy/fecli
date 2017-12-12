@@ -1,5 +1,7 @@
 # FunnelEnvy Command Line Interface
 
+*This tool is under active development! Breaking changes may be on the horizon. If you depend on `fecli` for day to day use, please reach out to @bruab when stuff goes wrong.*
+
 fecli is a command line tool for locally hosting frontend snippets. We use it to develop personalization campaigns and experiments for Optimizely Classic, Optimizely X, Adobe Test & Target, and Google Optimize.
 
 It consists of a local server to host your code and a [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) script to inject it.
