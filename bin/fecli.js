@@ -22,6 +22,11 @@ program
   .description('Host experience locally')
   .action(loadCommand('host'))
 
+program
+  .command('compile <path>')
+  .description('Create <path>.compiled.html for pasting into Adobe Test & Target')
+  .action(loadCommand('compile'))
+
 // Show help if no arguments are passed
 if (!process.argv.slice(2).length) {
   program._name = process.argv[1]
