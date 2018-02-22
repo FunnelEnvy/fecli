@@ -9,10 +9,10 @@
     <!-- Bootstrap -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
-      html {
-        position: relative;
-        min-height: 100%;
-      }
+html {
+  position: relative;
+  min-height: 100%;
+}
       body {
         /* Margin bottom by footer height */
         margin-bottom: 60px;
@@ -74,7 +74,7 @@
               <p>Follow the steps below once to host a variation locally with Fecli.</p>
               <ol>
                 <li>
-                Install the <a target="_blank" href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en">TamperMonkey Chrome Extension</a> or <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/" target="_blank">Greasemonkey Firefox Add On</a>.
+                  Install the <a target="_blank" href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en">TamperMonkey Chrome Extension</a> or <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/" target="_blank">Greasemonkey Firefox Add On</a>.
                 </li>
                 <li>
                   Install the Fecli Injection Script.
@@ -91,13 +91,18 @@
         </div>
         <div class="col-md-7">
           <h2 style="margin-top: 0;">Currently Hosting</h2>
-            <ul class="list-inline">
+          <ul class="list-inline">
 
+            <li>
+              <strong>Compiled Javascript:</strong>&nbsp;<a target="_blank" href="//localhost:8080/inject.js">localhost:8080/inject.js</a>
+            </li>
+            <% urls.forEach(function(url, index) { %>
+            <br />
               <li>
-                <strong>Compiled Javascript:</strong>&nbsp;<a target="_blank" href="//localhost:8080/inject.js">localhost:8080/inject.js</a>
+                <a target="_blank" href="<%= url %>"><%= url %></a>
               </li>
-                
-            </ul>
+            <% }) %>
+          </ul>
 
         </div>
       </div>

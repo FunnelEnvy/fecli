@@ -3,5 +3,9 @@
     "./experiment.css",
     "./experiment.js",
     "./v1.js"
+  ],
+  "urls": [
+    "http://www.foo.com/",
+    "http://google.com/"
   ]
 }
