@@ -16,6 +16,7 @@
   "author": "Arun Sivashankaran, Brian Hall",
   "contributors": [
     "Brian Hall"
+    ,"Jason Wilson"
   ],
   "license": "Apache 2.0",
   "dependencies": {
