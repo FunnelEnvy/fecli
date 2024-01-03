@@ -1,6 +1,6 @@
 {
   "name": "fecli",
-  "version": "0.5.0",
+  "version": "0.4.0",
   "description": "A fork of optimizely-cli; a command line tool for local hosting of experiences for Optimizely Classic and X, Adobe Test & Target, and Google Optimize",
   "main": "index.js",
   "bin": {
@@ -20,13 +20,13 @@
   ],
   "license": "Apache 2.0",
   "dependencies": {
-    "commander": "^2.20.3",
+    "commander": "^2.5.0",
     "ejs": "^1.0.0",
-    "express": "^4.18.2",
+    "express": "^4.10.4",
     "open": "0.0.5"
   },
   "engines": {
-    "node": ">=10.0.0 <=18.x.x"
+    "node": "^0.10.32"
   },
   "devDependencies": {
     "standard": "^10.0.3"
