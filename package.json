@@ -20,7 +20,7 @@
   ],
   "license": "Apache 2.0",
   "overrides": {
-    "js-yaml": "^4.1.0",
+    "js-yaml": ">=3.14.2",
     "shelljs": "^0.8.5",
     "ajv": "^6.12.3",
     "path-to-regexp": "^0.1.12",
